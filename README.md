@@ -10,23 +10,17 @@ Three different models are built and compared using PySpark:
 * Logistic Regression: A linear model that estimates the probability of each class using a logistic function and minimizes the cross-entropy loss.
 The models are trained using the TF-IDF features of the emails, which represent the term frequency-inverse document frequency of each word in the vocabulary. The models are evaluated using the accuracy, precision, recall, and F1-score metrics on both the email validation set.
 ## Results
-+------------+-------------+----------+------------+
-| Model      |   Precision |   Recall |   F1-Score |
-+============+=============+==========+============+
-| NaiveBayes |      0.9437 |    0.908 |     0.9173 |
-+------------+-------------+----------+------------+
+| Model      | Precision | Recall | F1-Score |
+|------------|-----------|--------|----------|
+| NaiveBayes | 0.9437    | 0.908  | 0.9173   |
 
-+------------------------+-------------+----------+------------+
-| Model                  |   Precision |   Recall |   F1-Score |
-+========================+=============+==========+============+
-| RandomForestClassifier |       0.763 |   0.8735 |     0.8145 |
-+------------------------+-------------+----------+------------+
+| Model                  | Precision | Recall | F1-Score |
+|------------------------|-----------|--------|----------|
+| RandomForestClassifier | 0.763     | 0.8735 | 0.8145   |
 
-+--------------------+-------------+----------+------------+
-| Model              |   Precision |   Recall |   F1-Score |
-+====================+=============+==========+============+
-| LogisticRegression |      0.9832 |   0.9834 |     0.9832 |
-+--------------------+-------------+----------+------------+
+| Model              | Precision | Recall | F1-Score |
+|--------------------|-----------|--------|----------|
+| LogisticRegression | 0.9832    | 0.9834 | 0.9832   |
 
 The results show that all three models perform well on the email dataset, with logistic regression having the highest accuracy and F1-score followed by naive bayes and random forest.
 
